@@ -1,0 +1,47 @@
+.board {
+  height: 60vh;
+  width: 60vh;
+  background-color: ＃BDB7AB;
+  margin-bottom: 10vh;
+  /* border: 2px solid black ; */
+}
+
+.boardrow {
+  height: 20vh;
+}
+
+.board-message {
+  background-color: #282c34;
+  margin: 0%;
+  font-size: 5vh;
+
+  /* marginだと画面がおかしくなる為paddingで対応 */
+  /* paddingだとbackgroud-colorがちゃんと適応された */
+  padding-bottom: 2vh;
+}
+
+.square {
+  height: 20vh;
+  width: 20vh;
+  font-size: 7vh;
+
+  /* ↓これがないとボタンを押下した際に下にズレる */
+  /* 原因不明 */
+  /* https://stackoverflow.com/questions/43462064/buttons-in-react-changing-alignment */
+  vertical-align: top;
+}
+
+.App-header {
+  background-color: #282c34;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
